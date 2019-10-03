@@ -5,6 +5,9 @@ import logo from './logo.svg'
 import './App.css'
 import { AutoCounter } from './AutoCounter'
 import { HookCounter } from './HookCounter'
+import { Stage } from '@inlet/react-pixi'
+import { Rectangle } from './Rectangle'
+import { RotatingRectangle } from './RotatingRectangle'
 // Not really sure what that does but fixes a warning
 setConfig({ trackTailUpdates: false })
 
@@ -26,9 +29,15 @@ function App() {
         </a>
         <AutoCounter />
         <HookCounter />
+        <Stage width={300} height={300}>
+          <Rectangle x={0} y={0} width={100} height={100} />
+          <RotatingRectangle x={150} y={150} width={100} height={100} />
+          <Rectangle x={200} y={200} width={100} height={100} />
+        </Stage>
       </header>
     </div>
   )
 }
 
 export default hot(App)
+// export default App
