@@ -4,6 +4,7 @@ import React from 'react'
 import logo from './logo.svg'
 import './App.css'
 import { AutoCounter } from './AutoCounter'
+import { HookCounter } from './HookCounter'
 // Not really sure what that does but fixes a warning
 setConfig({ trackTailUpdates: false })
 
@@ -24,6 +25,7 @@ function App() {
           Learn React
         </a>
         <AutoCounter />
+        <HookCounter />
       </header>
     </div>
   )
