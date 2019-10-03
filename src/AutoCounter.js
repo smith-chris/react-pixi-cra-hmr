@@ -14,7 +14,8 @@ export class AutoCounter extends Component {
   }
 
   generateString1() {
-    return '1'
+    // Changing this does not reset this.state.count, YAY!
+    return '2'
   }
 
   generateString2 = () => {

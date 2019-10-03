@@ -1,7 +1,11 @@
+import { setConfig } from 'react-hot-loader'
+import { hot } from 'react-hot-loader/root'
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
 import { AutoCounter } from './AutoCounter'
+// Not really sure what that does but fixes a warning
+setConfig({ trackTailUpdates: false })
 
 function App() {
   return (
@@ -25,4 +29,4 @@ function App() {
   )
 }
 
-export default App
+export default hot(App)
