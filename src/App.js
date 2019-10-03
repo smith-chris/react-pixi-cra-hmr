@@ -8,6 +8,7 @@ import { HookCounter } from './HookCounter'
 import { Stage } from '@inlet/react-pixi'
 import { Rectangle } from './Rectangle'
 import { RotatingRectangle } from './RotatingRectangle'
+import { Rectangles } from './Reactangles'
 // Not really sure what that does but fixes a warning
 setConfig({ trackTailUpdates: false })
 
@@ -30,9 +31,10 @@ function App() {
         <AutoCounter />
         <HookCounter />
         <Stage width={300} height={300}>
-          <Rectangle x={0} y={0} width={100} height={100} />
+          {/* <Rectangle x={0} y={0} width={100} height={100} />
           <RotatingRectangle x={150} y={150} width={100} height={100} />
-          <Rectangle x={200} y={200} width={100} height={100} />
+          <Rectangle x={200} y={200} width={100} height={100} /> */}
+          <Rectangles />
         </Stage>
       </header>
     </div>
